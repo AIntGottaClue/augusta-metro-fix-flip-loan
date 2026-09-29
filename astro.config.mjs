@@ -1,14 +1,10 @@
-{
-  "name": "augusta-metro-fix-flip-loan",
-  "type": "module",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
-  },
-  "dependencies": {
-    "astro": "^5.13.0",
-    "@astrojs/cloudflare": "^12.6.13"
-  }
-}
+import { defineConfig } from 'astro/config';
+import cloudflare from '@astrojs/cloudflare';
+
+export default defineConfig({
+  site: 'https://augusta.privatemoneyloans.click',
+  output: 'server',
+  adapter: cloudflare(),
+  trailingSlash: 'always',
+  build: { format: 'directory' }
+});
