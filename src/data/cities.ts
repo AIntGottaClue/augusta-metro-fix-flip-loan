@@ -1,6 +1,6 @@
 export interface City { slug:string; name:string; county:string; title:string; description:string; intro:string; angle:string; caution:string; }
 export const brand = "Augusta Metro Fix & Flip Loan";
-export const domain = "augusta.privatemoneyloans.click";
+export const domain = "augustafixandflip.loansapp.cfd";
 export const formName = "augusta-metro-fix-flip-loan-form";
 export const cities: City[] = [
   {
